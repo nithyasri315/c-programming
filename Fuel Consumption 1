@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+    
+int main() {
+    float fuel,distance,lp,mpg;
+    scanf("%f",&fuel);
+    scanf("%f",&distance);
+    if(fuel <= 0 || distance <=0){
+        printf("Invalid Input");
+    } else {
+        lp = (fuel / distance) * 100;
+        mpg = (distance * 0.6214)/(fuel * 0.2642);
+        printf("Liters/100KM \n%.2f\n",lp);
+        printf("Miles/gallons \n%.2f\n",mpg);
+    }
+    return 0;
+    
+    
+}
