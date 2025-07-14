@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,sum=0;
+    scanf("%d",&a);
+    if(a>=1000 && a<=9999)
+    {
+    while(a>0){
+        int rem= a % 10;
+        sum= sum + rem;
+        a=a/10;}
+        printf("Sum of digit is %d\n",sum);
+    }
+    else
+        printf("Invalid Input");
+    return 0;
+}
