@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int bas;
+    double hra,da,grs;
+    scanf("%d",&bas);
+    if(bas<15000)
+    {
+        hra=0.15*bas;
+        da=0.90*bas;
+    }
+    else
+    {
+        hra=5000;
+        da=0.98*bas;
+    }
+    grs=bas+hra+da;
+    printf("%.2f\n",grs);
+    return 0;
+}
